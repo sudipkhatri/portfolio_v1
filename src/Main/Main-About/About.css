@@ -1,0 +1,351 @@
+.about-div{
+
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: row;
+    height: fit-content;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+
+}
+.descriptions{
+    flex: 0.7;
+}
+ .description{
+
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+    
+
+}
+
+.description > h2{
+
+    display: inline-block;
+    text-align: left;
+    margin: 80px 0;
+    text-decoration: underline;
+    width: 60%;
+    font-size: 2.85rem;
+    letter-spacing: 1.5px;
+    color:#46878a;
+
+}
+
+.line > hr{
+    background-color:#fff;
+    border-width:0;
+    color:#fff;
+    height:1px;
+    line-height:2px;
+    display: inline-block;
+    text-align: left;
+    margin-bottom: 8px;
+    opacity: 0.5;
+    width:20%;
+}
+
+.description > p, .para > p{
+
+    display: block;
+    letter-spacing: 1.25px;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1.25rem;
+    width: 60%;
+
+
+}
+
+.design-a{
+
+    margin: 0;
+    padding: 0;
+    color:#46878a;
+    font-size: 2rem;
+    text-decoration: underline;
+
+}
+
+
+
+
+.tech{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    
+  
+
+}
+
+.tech > p{
+
+    
+    display: block;
+    letter-spacing: 1.25px;
+    line-height: 2;
+    text-align: center;
+    font-size: 1.25rem;
+    
+}
+
+.list{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+   
+    
+}
+
+
+.list-a{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list-b{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.tech >.list > .list-a > ul > li{
+
+    display: flex;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+
+
+.tech >.list > .list-b > ul > li{
+
+    display: flex;
+    text-decoration: none;
+}
+
+.jumbo{
+
+    display: block;
+    letter-spacing: 1.25px;
+    line-height: 2;
+    text-align: justify;
+    font-size: 1.25rem;
+    cursor: pointer;
+
+}
+
+.jumbo:hover{
+
+    color:#7fffd4;
+
+}
+
+
+
+.image{
+
+    
+    flex: 0.3;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    
+}
+
+
+.border, .stack{
+
+   
+    width: 300px;
+    height: 300px;
+    position: relative;
+   
+}
+
+.border{
+
+    top: 25px;
+    left: 200px;
+    z-index: 2;
+}
+
+.stack{
+
+    bottom: -40px;
+    left: -90px;
+    
+    border: 2px solid #7fffd4;
+    z-index : 1;
+}
+
+.image > .border > img{
+
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    width: 300px;
+    height: 300px;
+    color: #7fffd4;
+   
+
+}
+
+.image > .border > img:hover{
+
+    top: -18px;
+
+}
+
+@media (max-width: 1290px) {
+
+
+
+    .description > p{
+
+        width: 90%;
+    }
+
+    
+
+}
+
+@media (max-width: 1035px) {
+
+    .about-div{
+
+        margin-top: 80px;
+        padding-top: 20px;
+    }
+
+    .description > p{
+
+        width: 90%;
+    }
+     .description > h2{
+
+        width: 300px;
+        margin: 5px 0 ;
+    }
+}
+
+@media (max-width: 920px) {
+    
+    .about-div{
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 110vh;
+    
+    }
+
+    .descriptions, .tech, .image{
+
+        flex: 0.9;
+    }
+
+    .description > p{
+
+        width: 85%;
+    }
+
+    .image{
+
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+}
+@media (max-width: 720px) {
+
+    .about-div{
+        height:auto;
+        margin: auto 0 0 0 ;
+        padding-bottom: 0px; 
+    
+    }
+
+      .image{
+        width: 90%;
+        min-height: 400px;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .stack{
+
+        bottom: -40px;
+        left: -140px;
+
+   
+    }
+
+    .image > .border > img{
+
+    
+        top: 0;
+        left: -150px;
+ 
+    }
+
+
+}
+
+@media (max-width: 560px) {
+    
+    .about-div{
+     
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 10px;
+      
+
+    }
+
+    .descriptions{
+
+        flex-direction: column;
+    }
+
+    .description > h2{
+
+        margin: 5px 0 ;
+    }
+    .about-div > .image{
+        
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 380px) {
+
+    .about-div{
+
+        flex-direction: column;
+      
+
+    }
+
+}

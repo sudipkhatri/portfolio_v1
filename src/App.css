@@ -1,0 +1,15 @@
+.motion_div{
+    width: 100%;
+    height: 100vh;
+    background-color:#171717;
+
+}
+
+@media (max-width: 900px) {
+
+    .motion_div{
+
+        height: 100vh;
+    }
+    
+}

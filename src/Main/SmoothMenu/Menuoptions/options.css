@@ -1,0 +1,175 @@
+/* Education style begins */
+.Education_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    color: #f4f4f4;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+.Content_container{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.Content_one, .Content_two{
+
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   margin: 20px 10px;
+}
+
+
+.Title_subject{
+
+    margin: 5px 0 5px 0px;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+
+}
+
+
+.Title_uni{
+
+    font-size: 1.5rem;
+    font-family: cursive;
+    margin: 0 0 5px 0px;
+}
+
+.show-case{
+
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    
+}
+/* Education css ends  */
+
+/* Interest css starts */
+.Skills-container{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+
+}
+.ul{
+    
+    text-decoration: none;
+    list-style-type: square;   
+}
+.ul > li{
+
+    display: block;
+    font-family: 'Roboto', sans-serif;;
+    line-height: 1.5;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: left;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+
+.col-1, .col-2{
+    flex: 0.5;
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+/* Interest Css ends */
+
+/* skills css begins */
+
+/* Skills css */
+
+
+
+
+@media screen and (max-width:570px){
+    .Skills-container{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    .skills{
+        width: 100px;
+    }
+
+    .col-1, .col-2{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+             
+    }
+    .col1{
+       flex: 0.4;  
+    }
+    .col2{
+        flex: 0.4;
+    }
+    .Titles{
+        font-family: "Poppins SemiBold"; 
+        margin: 30px 0px 5px 5px;
+    }
+    .uni{
+        font-family: cursive;
+        text-decoration: wavy;
+        margin: 10px;
+    }
+    .Project{
+        flex: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+
+
+
+    .Skills-container{
+
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap : 0px;
+        
+    }
+
+   .Content_one, .Content_two{
+        padding:  4px;
+        margin:4px;
+   }
+    .Project{
+        flex: 100%;
+    }
+
+}
+@media screen and (max-width: 376px) {
+   
+     .Content_one, .Content_two{
+        padding: 0 4px;
+        margin:0 4px;
+
+   }
+   .Content_container{
+    column-gap: 0px;
+   }
+
+
+}

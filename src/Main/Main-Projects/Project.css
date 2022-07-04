@@ -1,0 +1,170 @@
+.projects_container{
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+}
+
+.projects_container > .project_title{
+
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    color:#46878a;
+    cursor: default;
+
+}
+
+.all_projects{
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    justify-content: space-evenly;
+    
+
+}
+
+.all_projects > .projects_list{
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 95%;
+    height: 600px;
+    /* border:  2px solid #46878a; */
+    box-shadow: 5px 5px 15px 5px #000000;
+    margin: 10px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.4s;
+
+}
+.all_projects > .projects_list:hover{
+
+    top: -18px;
+
+}
+
+.all_projects > .projects_list > .project_title{
+
+    display: block;
+    text-align: left;
+    margin-left: 20px;
+    font-size: 2.25rem;
+    letter-spacing: 1.5px;
+    color:#46878a;
+    cursor: default;
+
+}
+
+.highlight_keywords{
+    font-size: 1.5rem;
+    color: #f4f4f4;
+}
+.action_btn{
+
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_action{
+
+    margin: 20px 0;
+    display: block;
+    text-align: center;
+    border: 3px solid #46878a;
+    border-radius: 0px 30px 0px 30px;
+    padding: 15px;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+
+}
+
+.btn_action:hover{
+    
+    background-color: #000000;
+    color: #9dfaff;
+    border: 3px solid #9dfaff;
+}
+
+.all_projects > .projects_list > .project_desc{
+
+    display: block;
+    letter-spacing: 1.25px;
+    line-height: 2;
+    margin-left: 20px;
+    text-align: justify;
+    font-size: 1.25rem;
+    color: #f4f4f4;
+    width: 90%;
+       
+}
+
+
+
+.link_add > .project_link{
+
+    display: inline-block;
+    letter-spacing: 1.25px;
+    line-height: 2;
+    text-align: center;
+    font-size: 1.75rem;
+    color: #f4f4f4;
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.link_add > .project_link:hover{
+    
+    color:#46878a;
+}
+
+@media (max-width: 720px) {
+    
+    .all_projects{
+
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 560px) {
+
+    .projects_container{
+        margin-top: 235px;
+    }
+
+    .projects_container > .project_title{
+
+        font-size: 1rem;
+
+    }
+
+}
+
+@media (max-width: 395px) {
+
+    .projects_container{
+        width: 100%;
+    }
+
+    .all_projects > .projects_list{
+
+        width: 95%;
+        margin-left:auto ;
+        margin-right: auto;
+
+    }
+
+    .projects_container{
+
+        margin-top: 0px;
+    }
+  
+}

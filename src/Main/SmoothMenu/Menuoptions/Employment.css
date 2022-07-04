@@ -1,0 +1,102 @@
+.employment{
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.history{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    flex-direction: column;
+    color: #f4f4f4;
+    margin: 0 4px;
+    
+
+}
+
+.work_1, .work_2, .work_3{
+
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 0 0 10px 0;
+   
+
+}
+
+.title{
+
+    font-size: 2rem;
+    color: #f4f4f4;
+    text-align: left;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+
+
+}
+
+.position{
+
+    font-size: 1.5rem;
+    letter-spacing: 1.25px;
+    line-height: 1.5;
+    font-weight: 400;
+    
+}
+
+.desc{
+    font-size: 1.25rem;
+}
+
+.list_activities{
+
+    margin: 5px 0;
+}
+
+ .list_tasks{
+
+    display: inline-block;
+    text-decoration: none;
+    margin: 4px;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    text-align: left;
+    cursor: pointer;
+}
+.list_tasks:hover{
+
+    color: #2EE59D;
+    
+}
+@media (max-width: 750px) {
+    
+    .employment{
+        margin-top: 50px;
+        padding-top: 10px;
+        align-items: center;
+    }
+}
+
+@media (max-width: 555px) {
+    
+    .employment{
+
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        
+   
+    }
+}
+
+
+
